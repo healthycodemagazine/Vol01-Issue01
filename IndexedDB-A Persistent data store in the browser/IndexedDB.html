@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>	
+		<script src="store.js"></script>
+		<script>
+			jQuery().ready(function(){
+				createParticipantStore();
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Add participant</h1>	
+		<table>
+				<tr>
+						<td>Name</td>
+						<td><input type="text" id="nametext"></td>
+				</tr>	
+				<tr>
+						<td>Company</td>
+						<td><input type="text" id="companytext"></td>
+				</tr>	
+				<tr>
+						<td>Designation</td>
+						<td><input type="text" id="designationtext"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="Add" onclick="addParticipant()">
+					</td>
+					<td id="addmsg"></td>
+				</tr>	
+		</table>
+		<hr/>
+		<h1>List all participants</h1>
+		<table>
+			<tr>
+				<td>
+					<input type="button" value="List" onclick="listParticipants()">
+				</td>
+		</table>
+		<ul id="participantslist"></ul><hr/>
+		<h1>Remove participant</h1>
+		<table>
+				<tr>
+					<td>ID</td>
+					<td><input type="text" id="participantidtext"></td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" value="Remove" onclick="removeParticipant()">
+					</td>
+					<td id="delmsg"></td>
+				</tr>		
+		</table>		
+		
+	</body>
+</html>
