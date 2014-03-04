@@ -1,3 +1,15 @@
+/*
+   http://healthycodemagazine.com
+   Volume 01, Issue 01
+*/
+
+
+
+//////////////////////////////////
+// Code to create object store in IndexedDB
+// Add-Delete-List objects
+//////////////////////////////////
+
 var healthyCodeSeminar;
 
 function createParticipantStore(){
